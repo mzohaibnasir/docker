@@ -59,3 +59,23 @@ These commands will be used in DockerFile:
   CMD python app.py
 
 """
+
+<!-- ################################################################################################################# -->
+
+"""
+
+WRITING / BUILDING / RUNNING DOKCER iMAGES:
+
+1. Write Dockerfile:
+
+2. Build Docker Image:
+   docker build -t money_api
+
+docker ps # to see running dockers
+
+3. Running our app in docker.
+   docker run-p 8000:8000 money_api
+
+<!-- # hit http://0.0.0.0:8000/apidocs/ -->
+
+"""
