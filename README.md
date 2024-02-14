@@ -187,3 +187,9 @@ bash: This specifies the command to run inside the container. In this case, it's
 # you can use .dockerignore file
 
 # docker build creates images... images run in container using docker run
+
+"""
+
+# DOCKER COMPOSE
+
+"""
