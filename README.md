@@ -58,6 +58,10 @@ These commands will be used in DockerFile:
 - CMD: to run executable file i.e. app.py.. it will run those file
   CMD python app.py
 
+- ENTRYPOINT: defines main executable
+
+- ENV sets env variables
+
 """
 
 <!-- ################################################################################################################# -->
@@ -72,6 +76,8 @@ WRITING / BUILDING / RUNNING DOKCER iMAGES:
    docker build -t money_api
 
    build command create docker image using Dockerfile(contains instructions to build image) and context(locatin of files to be included in the build)
+
+   In context, only keep files that arre necessary for the build.
 
 docker ps # to see running dockers
 
@@ -177,3 +183,7 @@ docker exec: This command is used to execute a process inside a running containe
 -t: Allocates a pseudo-tty, which is necessary for attaching a terminal.
 d7d4ab450c5e: This is the container ID of the container you want to attach to. You can find container IDs using docker ps.
 bash: This specifies the command to run inside the container. In this case, it's the bash shell, providing a command-line interface.
+
+# you can use .dockerignore file
+
+# docker build creates images... images run in container using docker run
