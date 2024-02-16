@@ -1,0 +1,11 @@
+version 3.9
+
+services:
+  myapi:
+    image: "my-image:latest"
+    ports:
+      - "8888:80"
+    volumes:
+      - "/my-volume"
+    environment:
+      ENV_CODE: DEV
