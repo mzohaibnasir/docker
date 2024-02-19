@@ -233,3 +233,12 @@ There are multiple possible sections in the compose file.
 - configuration that can be shared by other elemennts in the compose file.
 
 """
+
+"""
+
+# Airflow
+
+- is a workflow managment platforn
+- manages data engineering pipelines
+- these workflows are defined as acyclic graphs
+- Takes and dependencies are defined in python
