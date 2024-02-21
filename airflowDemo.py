@@ -10,7 +10,7 @@ def say_hi(who):
 print(say_hi("XX"))
 
 
-with DAG("my-dag", start_date=datetime(2022, 8, 18)) as dag:
+with DAG("my-dag", start_date=datetime(2024, 2, 19)) as dag:
     task1 = PythonOperator(
         task_id="first_task", python_callable=say_hi, op_kwargs={"who": "A"}
     )
@@ -18,5 +18,6 @@ with DAG("my-dag", start_date=datetime(2022, 8, 18)) as dag:
     task2 = PythonOperator(
         task_id="second_task", python_callable=say_hi, op_kwargs={"who": "B"}
     )
+
 
 task1 >> task2
