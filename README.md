@@ -156,6 +156,8 @@ docker run -v <name>:/my-mounted-vol -it bash
 
 """
 
+# Container port vs Host port
+
 """
 
 # RUNNING A DATABASE IN CONTAINER
